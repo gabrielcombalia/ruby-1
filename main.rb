@@ -8,9 +8,9 @@ while (true) do
   puts "REceita #{nome} cadastrada"
   puts
   puts '++++++++++++++++ Receitas Cadastradas ++++++++++++++++'
-  receitas.each do |receita|
-    puts receita
-    
-  end
-
+  puts receitas
+  #receitas.each do |receita|
+  #  puts receita
+  #end
+  puts
 end
