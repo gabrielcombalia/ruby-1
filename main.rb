@@ -8,7 +8,9 @@ while (true) do
   puts "REceita #{nome} cadastrada"
   puts
   puts '++++++++++++++++ Receitas Cadastradas ++++++++++++++++'
-  for receita  in receitas do
+  receitas.each do |receita|
     puts receita
+    
   end
+
 end
