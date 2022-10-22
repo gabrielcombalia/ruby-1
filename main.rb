@@ -13,14 +13,19 @@ while (opcao != 3) do
     puts
     puts 'Digite a receita'
     nome = gets.chomp()
-    receitas << nome
+    puts 'Digite o tipo da receita'
+    tipo = gets.chomp()
+    receita = { nome: nome, tipo: tipo }
+    receitas << receita
     puts
-    puts "REceita #{nome} cadastrada"
+    puts "REceita #{receita[:nome]} cadastrada"
     puts
   elsif (opcao == 2)
     puts
     puts '++++++++++++++++ Receitas Cadastradas ++++++++++++++++'
-    puts receitas
+    receitas.each do |receita|
+      puts "#{receita[:nome]} - #{receita[:tipo]}"
+    end
     puts
   else
     puts "Opção inválida"
